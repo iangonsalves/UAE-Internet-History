@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head') %>
+<body>
+    <%- include('partials/header') %>
+    <main>
+        <h2>
+            <%= title %>
+        </h2>
+        <% if (validationError) { %>
+            <p style="color:red;">
+                <%= validationError %>
+            </p>
+        <% } %>
+        <section>
+            <h3>Technology Advancements</h3>
+            <ul>
+                <% content.forEach(item => { %>
+                <li><strong>
+                        <%= item.year %>:
+                    </strong> <u>
+                        <%= item.detail %>
+                    </u>
+                    <p>
+                        <%= item.description %>
+                    </p>
+                    <% if (item.year == 2022) { %>
+                        <figure> <img
+                                src="<%= media.digitalEconomyChart %>"
+                                alt="Digital Economy Growth Chart">
+                            <figcaption>A Chart Showcasing the growth of the
+                                internet, economy and IT in the UAE.
+                            </figcaption>
+                        </figure>
+                        <section>
+                            <h3>Smart City Initiative Progress</h3>
+                            <figure> <video controls>
+                                    <source
+                                        src="<%= media.video %>"
+                                        type="video/mp4"> Your browser does not
+                                    support the video tag.
+                                </video>
+                                <figcaption>Courtesy of ITU Youtube Channel
+                                </figcaption>
+                            </figure>
+                        </section>
+                    <% } %>
+                </li>
+                <% }) %>
+            </ul>
+        </section>
+        <section>
+            <h3>Smart City Innovations</h3>
+            <ul>
+                <% techAdvancements.forEach(tech => { %>
+                <li>
+                    <%= tech %>
+                </li>
+                <% }) %>
+            </ul>
+            <p>Here are some images to expand upon such innovations:</p>
+            <figure> <img src="<%= media.techHubImage %>"
+                    alt="Dubai Tech Journey">
+                <figcaption>Illustration of Dubai's Tech journey.</figcaption>
+            </figure>
+            <figure> <img
+                    src="<%= media.futureInfrastructure %>"
+                    alt="Dubai Tech Hub Infrastructure">
+                <figcaption>The Dubai Tech Hub Ecosystem which is climate
+                    friendly.</figcaption>
+            </figure>
+        </section>
+        <section>
+            <h3>Our Understanding</h3>
+            <p>
+                <%= closingStatement %>
+            </p>
+        </section>
+    </main>
+    <%- include('partials/footer') %>
+</body>
+</html>

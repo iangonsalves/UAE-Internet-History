@@ -1,0 +1,173 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: black;
+    color: #f8f9fa;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    background-color: #555;
+}
+
+#logo {
+    max-width: 5%;
+}
+
+/* Main Content */
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2,
+h3 {
+    color: #005f73;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+.no-bullets {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Media Section */
+img {
+    max-width: 60%;
+    /* Makes the image responsive based on device*/
+    height: auto;
+    /* Keeps aspect ratio */
+    border: 5px solid #333;
+    border-radius: 5px;
+    display: block;
+    /* Removes extra spacing */
+    margin: 0 auto;
+    /* Centers the image */
+    margin-bottom: 20px;
+}
+
+figure {
+    text-align: center;
+    /* Centers the image and caption */
+    margin-bottom: 20px;
+    /* Adds spacing below the figure */
+}
+
+figcaption {
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+    /* Adds spacing between image and text */
+}
+
+
+video {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: black;
+    color: #f8f9fa;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Style the button */
+button {
+    background-color: #4AB54C;
+    /* Green background */
+    color: black;
+    /* White text */
+    border: none;
+    /* Remove border */
+    padding: 10px 20px;
+    /* Padding for better size */
+    text-align: center;
+    /* Center text */
+    text-decoration: none;
+    /* Remove text decoration */
+    display: inline-block;
+    /* Ensure it's inline */
+    font-size: 16px;
+    /* Font size */
+    margin: 10px 0;
+    /* Margin for spacing */
+    cursor: pointer;
+    /* Cursor changes on hover */
+    border-radius: 5px;
+    /* Rounded corners */
+    transition: background-color 0.3s ease;
+    /* Smooth transition on hover */
+}
+
+/* Style the button on hover */
+button:hover {
+    background-color: #7DCA7E;
+    /* Darker green on hover */
+}
+
+/* Responsive Design for media  */
+@media (max-width: 768px) {
+    main {
+        width: 95%;
+        padding: 15px;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}

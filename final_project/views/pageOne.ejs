@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head') %>
+<body>
+    <%- include('partials/header') %>
+    <main>
+        <h2>
+            <%= title %>
+        </h2>
+        <% if (validationError) { %>
+            <p style="color:red;">
+                <%= validationError %>
+            </p>
+        <% } %>
+        <section>
+            <h3>Key Events</h3>
+            <ul>
+                <% content.forEach(item => { %>
+                <li><strong>
+                        <%= item.year %>:
+                    </strong> <u>
+                        <%= item.detail %>
+                    </u>
+                    <p>
+                        <%= item.description %>
+                    </p>
+                    <% if (item.year == 1997) { %>
+                        <figure> <img
+                                src="<%= media.gulfNews %>"
+                                alt="Gulf News Photo">
+                            <figcaption>First Newspaper Webpage in the UAE
+                            </figcaption>
+                        </figure>
+                    <% } %>
+                    <% if (item.year == 2000) { %>
+                        <figure> <img
+                                src="<%= media.broadbandService %>"
+                                alt="Etisalat Modem">
+                            <figcaption>Modem Technology used for Broadband
+                                Services</figcaption>
+                        </figure>
+                    <% } %>
+                </li>
+                <% }) %>
+            </ul>
+        </section>
+        <section>
+            <h3>Challenges</h3>
+            <ul>
+                <% challenges.forEach(challenge => { %>
+                <li>
+                    <%= challenge %>
+                </li>
+                <% }) %>
+            </ul>
+        </section>
+        <section>
+            <h3>Our Understanding</h3>
+            <p>
+                <%= closingStatement %>
+            </p>
+        </section>
+    </main>
+    <%- include('partials/footer') %>
+</body>
+</html>

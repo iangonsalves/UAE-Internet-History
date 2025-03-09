@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('partials/head') %>
+
+<body>
+    <%- include('partials/header') %>
+    <main>
+        <section>
+            <h2>
+                <%= title %>
+            </h2>
+            <p>
+                <%= summary %>
+            </p>
+
+            <% if (validationError) { %>
+                <p style="color:red;"><%= validationError %></p>
+            <% } %>
+        </section>
+
+
+        <section>
+            <h3>Timeline of the overview of events.</h3>
+            <ul>
+                <% timeline.forEach((item)=> { %>
+                    <li><strong>
+                            <%= item.year %>:
+                        </strong>
+                        <%= item.event %>
+                    </li>
+                    <% if (item.year==1997) { %>
+                        <li class="no-bullets">
+                        <figure>
+                            <img src="<%= media.etisalatImage %>" alt="First ISP Etisalat Building created.">
+                            <figcaption>First ISP Etisalat Building in the UAE.</figcaption>
+                        </figure>
+                        </li>
+                    <% } %>
+                    <% if (item.year==2006) { %>
+                        <li class="no-bullets">
+                        <figure>
+                            <img src="<%= media.duImage %>" alt="Second ISP Du was created for competition.">
+                            <figcaption>Second ISP DU was created as competition.</figcaption>
+                        </figure>
+                        </li>
+                    <% } %>
+                    <% if (item.year==2013) { %>
+                        <li class="no-bullets">
+                        <figure>
+                            <img src="<%= media.smartInitiative %>" alt="Gitex event showcasing the innovations in Dubai">
+                            <figcaption>Gitex event showing innovations from initiative made in 2013.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="<%= media.sharjahInitiative %>" alt="Sharjah Goverment showcasing innovation at Gitex">
+                            <figcaption>Sharjah Goverment showcasing innovation at Gitex event.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="<%= media.smartCityDubai %>" alt="Smart City Innovations">
+                            <figcaption>Dubai Showcasing their Smart City innovation plans.</figcaption>
+                        </figure>
+                        </li>
+                    <% } %>
+                    <% if (item.year==2019) { %>
+                        <li class="no-bullets">
+                        <figure>
+                            <img src="<%= media.etisalat5GJourney %>" alt="Timeline Demonstrating the journey of Internet">
+                            <figcaption>Timeline demonstrating journey from the beginning to the breakthrough of 5G. </figcaption>
+                        </figure>
+                        </li>
+                    <% } %>
+                <% }) %>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Conclusion</h3>
+            <p> <%= conclusion %></p>
+        </section>
+    </main>
+
+    <%- include('partials/footer') %>      
+</body>
+
+</html>

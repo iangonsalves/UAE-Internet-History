@@ -1,0 +1,144 @@
+{
+    "home": {
+        "title": "Introduction to UAE's Internet History",
+        "summary": "The UAE's internet landscape has evolved rapidly over the years. From its first ISP monopoly being Etisalat to smart city innovations in Dubai, the tech hub, this blog showcases the journey of the nation's digital transformation. The journey has been split into three different periods being The History Period , The Expansion Period and finally the Modern Period. Let's Begin!",
+        "timeline": [
+            {
+                "year": 1995,
+                "event": "UAE introduces public internet via Etisalat."
+            },
+            {
+                "year": 1997,
+                "event": "First commercial internet services launched."
+            },
+            {
+                "year": 2006,
+                "event": "Du launches as a second ISP."
+            },
+            {
+                "year": 2013,
+                "event": "Smart Dubai Initiative launched."
+            },
+            {
+                "year": 2019,
+                "event": "UAE rolls out 5G."
+            }
+        ],
+        "conclusion": "The UAE has come a long way from when it first launched mobile networks to when it first has publically available internet in the 1900s. All the way to now where we are one of the first countries in the world to introduce 5G. To understand more in depth of each time period, please go through each page accordingly! ",
+        "media": {
+            "etisalatImage": "/images/first_building.jpg",
+            "duImage": "/images/du_branch.jpg",
+            "smartInitiative": "/images/gitex_2018_jpg.jpg",
+            "sharjahInitiative": "/images/sharjah_initiative.jpg",
+            "smartCityDubai": "/images/smart_city_dubai.jpg",
+            "etisalat5GJourney": "images/etisalat_journey_plan.jpg",
+            "video": "/videos/uae_internet_history.mp4"
+        }
+    },
+    "pageOne": {
+        "title": "Early Internet in UAE (1990s – 2000s)",
+        "content": [
+            {
+                "year": 1982,
+                "detail": "UAE launches it's first mobile network under the ISP name Etisalat. It was the first ever network in the Middle East."
+            },
+            {
+                "year": 1995,
+                "detail": "Etisalat introduces public internet access, making UAE one of the early adopters in the Middle East.",
+                "description": "Although mobile services were launched in the year 1982, it never had internet publically available till 1995. That was when the first breakthrough occured.Although it was only used by businesses and goverment services by then."
+            },
+            {
+                "year": 1997,
+                "detail": "First commercial internet services available, albeit expensive and slow."
+            },
+            {
+                "year": 2000,
+                "detail": "Broadband services launch, improving internet speeds and accessibility.",
+                "description": "The first broadband internet service via ADSL technology. It was one of it's kind at the time and showcases how fast the internet was evolving."
+            }
+        ],
+        "challenges": [
+            "High costs of internet services.",
+            "Limited accessibility to the general public.",
+            "Slow connection speeds compared to global standards."
+        ],
+        "closingStatement": "Since the internet was just launched, it quite expensive to connect to the internet through the modes available. Furthermore when it was available, it was mostly used by big businesses or for goverment services. Lastly due to the technology advancements at that time, internets speeds were not upto the standards we have set ourselves in this day and age, making it quite slow compared to the world using it back then. The next page you visit wil give you a better understaning of the evolution! ",
+        "media": {
+            "gulfNews": "/images/gulf_news.jpg",
+            "broadbandService": "/images/broadband_service.jpg"
+        }
+    },
+    "pageTwo": {
+        "title": "Expansion & Digital Growth In the UAE (2000s – 2010s)",
+        "content": [
+            {
+                "year": 2006,
+                "detail": "Du launches as the second ISP, introducing competition.",
+                "description": "This was also a govermnent backed service and is goverment controlled as well. Another initiative to further increase competition and increase accessibility for the internet to the public. "
+            },
+            {
+                "year": 2010,
+                "detail": "UAE launches UAE Vision 2021 to digitise services in the UAE.",
+                "description": "This initiatice was created to make a plan of goals to be  the best countries in the world by the year 2021 when the UAE would celebrate the Golden Jubilee of its formation as a federation. One of the points to be stressed about was \"United in Knowledge \".This indicated a rise in innovation and technology"
+            },
+            {
+                "year": 2013,
+                "detail": "Smart Dubai Initiative aims to digitize government services and promote innovation.",
+                "description": "This was another pivotal decade for the UAE as Dubai embarked on a visionary journey to transform into a smart city.A city that uses technology to make city life better for everyone. "
+            },
+            {
+                "year": 2015,
+                "detail": "WiFi becomes available in public spaces in the UAE",
+                "description": "THis was a breakthrough as it lead to more accessibility in malls, public spaces etc. This led to being of aid to people not having cellular data or ways to connect to the internet in a public setting."
+            },
+            {
+                "year": 2019,
+                "detail": "Du announces WiFi integration into public transport modes.",
+                "description": "This was a genius idea at the time as it led to help ,for example, tourists who needed internet access or routes information when they may not have the means to do so."
+            }
+        ],
+        "features": [
+            "Public Wi-Fi becomes widely available in malls, parks, and airports.",
+            "Strict regulations introduced for online content filtering.",
+            "Rise of mobile internet usage with faster speeds."
+        ],
+        "closingStatement": "Due to the evolution of the Internet, we now have widely available WiFI which is beneficial for residents and tourirst. Technlogies have advanced and so has out speeds. With such advancements comes safety and that is strict internet filtering to block any forms or protocols that violates this countries' laws. Being adult content or VoIP, these measures were made to better the usage for the young and old of the country. Finally we shall move onto the last period being the Modern internet!",
+        "media": {
+            "smartCityChart": "/images/business_growth.jpg",
+            "busWiFi": "/images/bus_wifi.jpg",
+            "video": "/images/smart_city_interview.mp4"
+        }
+    },
+    "pageThree": {
+        "title": "Modern Internet & Smart Infrastructure (2010s – Present)",
+        "content": [
+            {
+                "year": 2019,
+                "detail": "UAE becomes one of the first countries to roll out 5G nationwide.",
+                "description": "5G launch in the UAE was the first in the Middle East and fourth globally marking quite an incredible journey with the mobile network. Although it was limited at this time, it was still quite an achievement "
+            },
+            {
+                "year": 2021,
+                "detail": "Smart city initiatives integrate AI, blockchain, and IoT into daily services.",
+                "description": "Due to the UAE geopolitical positon and importance to world economy with infrastructure in energy.UAE had the highest amount of malware with consumers in the GCC for example.So it was critical that these initiatives led to fruitful outcomes."
+            },
+            {
+                "year": 2022,
+                "detail": "UAE Vision 2021 sets the goal for a digital economy, focusing on smart services and e-governance.",
+                "description": "The goal was added to be part of the UAE Vision 2021 to help advance the services and technologies available in the UAE."
+            }
+        ],
+        "techAdvancements": [
+            "AI-powered government services and chatbots.",
+            "Blockchain adoption for secure transactions.",
+            "IoT-enabled smart city solutions."
+        ],
+        "closingStatement": "With the innovation of AI, the internet has become a transformed hub of communication since it has first started. Goverments now provide services linked to them and have gone paperless. Blockchain has been growing, leading to more people investing into the market.Finally imroved quality of life with IoT integrated devices to monitor traffic to weather conditons. THe UAE has come a long way from where it began, excited to see where it will end up in 10 years time.",
+        "media": {
+            "techHubImage": "/images/dubai_tech_hub.jpg",
+            "digitalEconomyChart": "/images/digital_economy_growth.jpg",
+            "futureInfrastructure": "/images/future_infrastructure.jpg",
+            "video": "/images/smart_dubai.mp4"
+        }
+    }
+}

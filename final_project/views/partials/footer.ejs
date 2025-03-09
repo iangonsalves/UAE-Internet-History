@@ -1,0 +1,15 @@
+<footer>
+  <button id="backToTopBtn">Back to Top</button>
+</footer>
+
+
+<script>
+  //Function was taken from https://stackoverflow.com/questions/15935318/smooth-scroll-to-top.
+  // Function to scroll to the top smoothly taken from .
+  document.getElementById('backToTopBtn').addEventListener('click', function () {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Enable smooth scrolling
+    });
+  });
+</script>

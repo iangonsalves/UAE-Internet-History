@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head') %>
+<body>
+    <%- include('partials/header') %>
+    <main>
+        <h2>
+            <%= title %>
+        </h2>
+        <% if (validationError) { %>
+            <p style="color:red;">
+                <%= validationError %>
+            </p>
+        <% } %>
+        <section>
+            <h3>Major Developments with the Internet </h3>
+            <ul>
+                <% content.forEach(item => { %>
+                <li><strong>
+                        <%= item.year %>:
+                    </strong> <u>
+                        <%= item.detail %>
+                    </u>
+                    <p>
+                        <%= item.description %>
+                    </p>
+                </li>
+                <% if (item.year == 2013) { %>
+                    <li class="no-bullets">
+                        <figure> <img
+                                src="<%= media.smartCityChart %>"
+                                alt="Business Growth Chart">
+                            <figcaption>A Chart Showcasing the Business Growth
+                                since the initiative started in the UAE.
+                            </figcaption>
+                        </figure>
+                        <section>
+                            <h3>CEO explanation of Smart City Digital
+                                Transformation.</h3>
+                            <figure> <video controls>
+                                    <source
+                                        src="<%= media.video %>"
+                                        type="video/mp4"> Your browser does not
+                                    support the video tag.
+                                </video>
+                                <figcaption>Courtesy of SOFTWARE AG Youtube
+                                    Channel.</figcaption>
+                            </figure>
+                        </section>
+                    </li>
+                <% } %>
+                <% if (item.year == 2019) { %>
+                    <li class="no-bullets">
+                        <figure> <img src="<%= media.busWiFi %>"
+                                alt="Bus WiFi introduction">
+                            <figcaption>A glimpse of the future bus services
+                                being fully equiped with WiFi.</figcaption>
+                        </figure>
+                    </li>
+                <% } %>
+                <% }) %>
+            </ul>
+        </section>
+        <section>
+            <h3>Key Features</h3>
+            <ul>
+                <% features.forEach(feature => { %>
+                <li>
+                    <%= feature %>
+                </li>
+                <% }) %>
+            </ul>
+        </section>
+        <section>
+            <h3>Our Understanding</h3>
+            <p>
+                <%= closingStatement %>
+            </p>
+        </section>
+    </main>
+    <%- include('partials/footer') %>
+</body>
+</html>
